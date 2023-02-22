@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6149576B29A57652009769A9 /* MotivatiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149576A29A57652009769A9 /* MotivatiApp.swift */; };
+		6149576D29A57652009769A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149576C29A57652009769A9 /* ContentView.swift */; };
+		6149576F29A57653009769A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6149576E29A57653009769A9 /* Assets.xcassets */; };
+		6149577229A57653009769A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6149577129A57653009769A9 /* Preview Assets.xcassets */; };
+		6149577C29A57653009769A9 /* MotivatiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149577B29A57653009769A9 /* MotivatiTests.swift */; };
+		6149578629A57653009769A9 /* MotivatiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149578529A57653009769A9 /* MotivatiUITests.swift */; };
+		6149578829A57653009769A9 /* MotivatiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149578729A57653009769A9 /* MotivatiUITestsLaunchTests.swift */; };
+		6149579B29A5768E009769A9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6149579A29A5768E009769A9 /* WidgetKit.framework */; };
+		6149579D29A5768E009769A9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6149579C29A5768E009769A9 /* SwiftUI.framework */; };
+		614957A029A5768E009769A9 /* MotivatiWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6149579F29A5768E009769A9 /* MotivatiWidgetBundle.swift */; };
+		614957A229A5768E009769A9 /* MotivatiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614957A129A5768E009769A9 /* MotivatiWidget.swift */; };
+		614957A429A5768F009769A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614957A329A5768F009769A9 /* Assets.xcassets */; };
+		614957A829A5768F009769A9 /* MotivatiWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6149579829A5768E009769A9 /* MotivatiWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		614957AE29A576BE009769A9 /* Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614957AD29A576BE009769A9 /* Simple.swift */; };
+		614957B029A57702009769A9 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614957AF29A57702009769A9 /* Provider.swift */; };
+		614957B229A577A9009769A9 /* MotiNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614957B129A577A9009769A9 /* MotiNew.swift */; };
+		614957B829A578E5009769A9 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614957B729A578E5009769A9 /* WidgetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6149577829A57653009769A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6149575F29A57652009769A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6149576629A57652009769A9;
+			remoteInfo = Motivati;
+		};
+		6149578229A57653009769A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6149575F29A57652009769A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6149576629A57652009769A9;
+			remoteInfo = Motivati;
+		};
+		614957A629A5768F009769A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6149575F29A57652009769A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6149579729A5768E009769A9;
+			remoteInfo = MotivatiWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		614957AC29A5768F009769A9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				614957A829A5768F009769A9 /* MotivatiWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6149576729A57652009769A9 /* Motivati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivati.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6149576A29A57652009769A9 /* MotivatiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivatiApp.swift; sourceTree = "<group>"; };
+		6149576C29A57652009769A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6149576E29A57653009769A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6149577129A57653009769A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6149577729A57653009769A9 /* MotivatiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotivatiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6149577B29A57653009769A9 /* MotivatiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivatiTests.swift; sourceTree = "<group>"; };
+		6149578129A57653009769A9 /* MotivatiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotivatiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6149578529A57653009769A9 /* MotivatiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivatiUITests.swift; sourceTree = "<group>"; };
+		6149578729A57653009769A9 /* MotivatiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivatiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6149579829A5768E009769A9 /* MotivatiWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MotivatiWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6149579A29A5768E009769A9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6149579C29A5768E009769A9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6149579F29A5768E009769A9 /* MotivatiWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivatiWidgetBundle.swift; sourceTree = "<group>"; };
+		614957A129A5768E009769A9 /* MotivatiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivatiWidget.swift; sourceTree = "<group>"; };
+		614957A329A5768F009769A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		614957A529A5768F009769A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614957AD29A576BE009769A9 /* Simple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple.swift; sourceTree = "<group>"; };
+		614957AF29A57702009769A9 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		614957B129A577A9009769A9 /* MotiNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiNew.swift; sourceTree = "<group>"; };
+		614957B329A577E7009769A9 /* Motivati.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Motivati.entitlements; sourceTree = "<group>"; };
+		614957B429A577FB009769A9 /* MotivatiWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotivatiWidgetExtension.entitlements; sourceTree = "<group>"; };
+		614957B729A578E5009769A9 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		614957B929A57ECD009769A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		614957CA29A592A2009769A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6149576429A57652009769A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149577429A57653009769A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149577E29A57653009769A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149579529A5768E009769A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6149579D29A5768E009769A9 /* SwiftUI.framework in Frameworks */,
+				6149579B29A5768E009769A9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6149575E29A57652009769A9 = {
+			isa = PBXGroup;
+			children = (
+				614957CA29A592A2009769A9 /* README.md */,
+				614957B429A577FB009769A9 /* MotivatiWidgetExtension.entitlements */,
+				6149576929A57652009769A9 /* Motivati */,
+				6149577A29A57653009769A9 /* MotivatiTests */,
+				6149578429A57653009769A9 /* MotivatiUITests */,
+				6149579E29A5768E009769A9 /* MotivatiWidget */,
+				6149579929A5768E009769A9 /* Frameworks */,
+				6149576829A57652009769A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6149576829A57652009769A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6149576729A57652009769A9 /* Motivati.app */,
+				6149577729A57653009769A9 /* MotivatiTests.xctest */,
+				6149578129A57653009769A9 /* MotivatiUITests.xctest */,
+				6149579829A5768E009769A9 /* MotivatiWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6149576929A57652009769A9 /* Motivati */ = {
+			isa = PBXGroup;
+			children = (
+				614957B929A57ECD009769A9 /* Info.plist */,
+				614957B329A577E7009769A9 /* Motivati.entitlements */,
+				6149576A29A57652009769A9 /* MotivatiApp.swift */,
+				6149576C29A57652009769A9 /* ContentView.swift */,
+				614957B129A577A9009769A9 /* MotiNew.swift */,
+				6149576E29A57653009769A9 /* Assets.xcassets */,
+				6149577029A57653009769A9 /* Preview Content */,
+			);
+			path = Motivati;
+			sourceTree = "<group>";
+		};
+		6149577029A57653009769A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6149577129A57653009769A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6149577A29A57653009769A9 /* MotivatiTests */ = {
+			isa = PBXGroup;
+			children = (
+				6149577B29A57653009769A9 /* MotivatiTests.swift */,
+			);
+			path = MotivatiTests;
+			sourceTree = "<group>";
+		};
+		6149578429A57653009769A9 /* MotivatiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6149578529A57653009769A9 /* MotivatiUITests.swift */,
+				6149578729A57653009769A9 /* MotivatiUITestsLaunchTests.swift */,
+			);
+			path = MotivatiUITests;
+			sourceTree = "<group>";
+		};
+		6149579929A5768E009769A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6149579A29A5768E009769A9 /* WidgetKit.framework */,
+				6149579C29A5768E009769A9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6149579E29A5768E009769A9 /* MotivatiWidget */ = {
+			isa = PBXGroup;
+			children = (
+				614957A529A5768F009769A9 /* Info.plist */,
+				6149579F29A5768E009769A9 /* MotivatiWidgetBundle.swift */,
+				614957A129A5768E009769A9 /* MotivatiWidget.swift */,
+				614957A329A5768F009769A9 /* Assets.xcassets */,
+				614957AD29A576BE009769A9 /* Simple.swift */,
+				614957AF29A57702009769A9 /* Provider.swift */,
+				614957B729A578E5009769A9 /* WidgetView.swift */,
+			);
+			path = MotivatiWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6149576629A57652009769A9 /* Motivati */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6149578B29A57653009769A9 /* Build configuration list for PBXNativeTarget "Motivati" */;
+			buildPhases = (
+				6149576329A57652009769A9 /* Sources */,
+				6149576429A57652009769A9 /* Frameworks */,
+				6149576529A57652009769A9 /* Resources */,
+				614957AC29A5768F009769A9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				614957A729A5768F009769A9 /* PBXTargetDependency */,
+			);
+			name = Motivati;
+			productName = Motivati;
+			productReference = 6149576729A57652009769A9 /* Motivati.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6149577629A57653009769A9 /* MotivatiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6149578E29A57653009769A9 /* Build configuration list for PBXNativeTarget "MotivatiTests" */;
+			buildPhases = (
+				6149577329A57653009769A9 /* Sources */,
+				6149577429A57653009769A9 /* Frameworks */,
+				6149577529A57653009769A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6149577929A57653009769A9 /* PBXTargetDependency */,
+			);
+			name = MotivatiTests;
+			productName = MotivatiTests;
+			productReference = 6149577729A57653009769A9 /* MotivatiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6149578029A57653009769A9 /* MotivatiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6149579129A57653009769A9 /* Build configuration list for PBXNativeTarget "MotivatiUITests" */;
+			buildPhases = (
+				6149577D29A57653009769A9 /* Sources */,
+				6149577E29A57653009769A9 /* Frameworks */,
+				6149577F29A57653009769A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6149578329A57653009769A9 /* PBXTargetDependency */,
+			);
+			name = MotivatiUITests;
+			productName = MotivatiUITests;
+			productReference = 6149578129A57653009769A9 /* MotivatiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6149579729A5768E009769A9 /* MotivatiWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 614957A929A5768F009769A9 /* Build configuration list for PBXNativeTarget "MotivatiWidgetExtension" */;
+			buildPhases = (
+				6149579429A5768E009769A9 /* Sources */,
+				6149579529A5768E009769A9 /* Frameworks */,
+				6149579629A5768E009769A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotivatiWidgetExtension;
+			productName = MotivatiWidgetExtension;
+			productReference = 6149579829A5768E009769A9 /* MotivatiWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6149575F29A57652009769A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6149576629A57652009769A9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6149577629A57653009769A9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6149576629A57652009769A9;
+					};
+					6149578029A57653009769A9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6149576629A57652009769A9;
+					};
+					6149579729A5768E009769A9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 6149576229A57652009769A9 /* Build configuration list for PBXProject "Motivati" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6149575E29A57652009769A9;
+			productRefGroup = 6149576829A57652009769A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6149576629A57652009769A9 /* Motivati */,
+				6149577629A57653009769A9 /* MotivatiTests */,
+				6149578029A57653009769A9 /* MotivatiUITests */,
+				6149579729A5768E009769A9 /* MotivatiWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6149576529A57652009769A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6149577229A57653009769A9 /* Preview Assets.xcassets in Resources */,
+				6149576F29A57653009769A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149577529A57653009769A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149577F29A57653009769A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149579629A5768E009769A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614957A429A5768F009769A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6149576329A57652009769A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614957B229A577A9009769A9 /* MotiNew.swift in Sources */,
+				6149576D29A57652009769A9 /* ContentView.swift in Sources */,
+				6149576B29A57652009769A9 /* MotivatiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149577329A57653009769A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6149577C29A57653009769A9 /* MotivatiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149577D29A57653009769A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6149578829A57653009769A9 /* MotivatiUITestsLaunchTests.swift in Sources */,
+				6149578629A57653009769A9 /* MotivatiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6149579429A5768E009769A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614957B829A578E5009769A9 /* WidgetView.swift in Sources */,
+				614957B029A57702009769A9 /* Provider.swift in Sources */,
+				614957A229A5768E009769A9 /* MotivatiWidget.swift in Sources */,
+				614957A029A5768E009769A9 /* MotivatiWidgetBundle.swift in Sources */,
+				614957AE29A576BE009769A9 /* Simple.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6149577929A57653009769A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6149576629A57652009769A9 /* Motivati */;
+			targetProxy = 6149577829A57653009769A9 /* PBXContainerItemProxy */;
+		};
+		6149578329A57653009769A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6149576629A57652009769A9 /* Motivati */;
+			targetProxy = 6149578229A57653009769A9 /* PBXContainerItemProxy */;
+		};
+		614957A729A5768F009769A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6149579729A5768E009769A9 /* MotivatiWidgetExtension */;
+			targetProxy = 614957A629A5768F009769A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6149578929A57653009769A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6149578A29A57653009769A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6149578C29A57653009769A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Motivati/Motivati.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Motivati/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motivati/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Motivati;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6149578D29A57653009769A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Motivati/Motivati.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Motivati/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motivati/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Motivati;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6149578F29A57653009769A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MotivatiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motivati.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Motivati";
+			};
+			name = Debug;
+		};
+		6149579029A57653009769A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MotivatiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motivati.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Motivati";
+			};
+			name = Release;
+		};
+		6149579229A57653009769A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MotivatiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motivati;
+			};
+			name = Debug;
+		};
+		6149579329A57653009769A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MotivatiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motivati;
+			};
+			name = Release;
+		};
+		614957AA29A5768F009769A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MotivatiWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotivatiWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MotivatiWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Motivati.MotivatiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		614957AB29A5768F009769A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MotivatiWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotivatiWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MotivatiWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Motivati.MotivatiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6149576229A57652009769A9 /* Build configuration list for PBXProject "Motivati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6149578929A57653009769A9 /* Debug */,
+				6149578A29A57653009769A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6149578B29A57653009769A9 /* Build configuration list for PBXNativeTarget "Motivati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6149578C29A57653009769A9 /* Debug */,
+				6149578D29A57653009769A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6149578E29A57653009769A9 /* Build configuration list for PBXNativeTarget "MotivatiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6149578F29A57653009769A9 /* Debug */,
+				6149579029A57653009769A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6149579129A57653009769A9 /* Build configuration list for PBXNativeTarget "MotivatiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6149579229A57653009769A9 /* Debug */,
+				6149579329A57653009769A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		614957A929A5768F009769A9 /* Build configuration list for PBXNativeTarget "MotivatiWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614957AA29A5768F009769A9 /* Debug */,
+				614957AB29A5768F009769A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6149575F29A57652009769A9 /* Project object */;
+}
